@@ -4,6 +4,10 @@ var speed := 300
 var motion := Vector2()
 var shoot_timer := 0.0
 var fire_rate := 0.4
+var health := 100
+
+func _ready():
+	health = 100
 
 
 func _physics_process(delta):
@@ -24,6 +28,9 @@ func _physics_process(delta):
 	if Input.is_action_pressed("ui_accept") and shoot_timer > fire_rate:
 		shoot()
 		shoot_timer = 0
+	
+	if health <= 0:
+		get_tree().reload_current_scene()
 
 
 func shoot():

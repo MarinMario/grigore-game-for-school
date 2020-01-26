@@ -1,6 +1,6 @@
 extends Node2D
 
-
+var score := 0
 
 const BULLET = preload("res://bullet/bullet.tscn")
 
