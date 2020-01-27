@@ -34,6 +34,7 @@ func _physics_process(delta):
 
 
 func shoot():
+	global.get_node("laser").play()
 	var bullet = global.BULLET.instance()
 	bullet.global_position = $shoot_point.global_position
 	get_parent().add_child(bullet)

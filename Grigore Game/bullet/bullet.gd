@@ -15,5 +15,5 @@ func _on_bullet_area_entered(area):
 
 func disable_c():
 	$CollisionShape2D.disabled = true
-	$ColorRect.visible = false
+	$Sprite.visible = false
 	

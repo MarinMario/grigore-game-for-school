@@ -47,10 +47,10 @@ margin_bottom = 628.392
 color = Color( 0.0117647, 0.0117647, 0.054902, 1 )
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
-position = Vector2( 71.2296, 226.639 )
+position = Vector2( 479.181, 300.028 )
 amount = 200
 emission_shape = 2
-emission_rect_extents = Vector2( 1000, 400 )
+emission_rect_extents = Vector2( 600, 400 )
 gravity = Vector2( 0, 0 )
 
 [node name="CPUParticles2D2" type="CPUParticles2D" parent="."]
@@ -67,7 +67,6 @@ color = Color( 1, 0.72549, 0, 1 )
 layer = 2
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
-visible = false
 margin_left = -10.0
 margin_top = -14.573
 margin_right = 1031.0

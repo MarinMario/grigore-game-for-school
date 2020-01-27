@@ -35,9 +35,11 @@ func die():
 	if type == "bad":
 		global.score += 1
 		spawn_score_feedback("+")
+		global.get_node("correct").play()
 	else:
 		global.score -= 1
 		spawn_score_feedback("-")
+		global.get_node("wrong").play()
 		
 		
 	if global.score < 0: global.score = 0

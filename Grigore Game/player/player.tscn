@@ -5,7 +5,7 @@
 [ext_resource path="res://player/player_stats.tscn" type="PackedScene" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 59.6818, 27.4887 )
+extents = Vector2( 49.6916, 38.9524 )
 
 [sub_resource type="Gradient" id=2]
 offsets = PoolRealArray( 0, 0.305019, 0.718147, 0.992278 )
@@ -15,7 +15,7 @@ colors = PoolColorArray( 1, 1, 1, 1, 1, 0.820313, 0, 1, 1, 0, 0, 1, 0.443137, 0,
 script = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 16.2108, 2.16144 )
+position = Vector2( -0.805939, 1.53119 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -24,7 +24,7 @@ scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 2 )
 
 [node name="shoot_point" type="Position2D" parent="."]
-position = Vector2( 90.7804, 1.62106 )
+position = Vector2( 52.9655, 0.360566 )
 
 [node name="player_stats" parent="." instance=ExtResource( 3 )]
 
