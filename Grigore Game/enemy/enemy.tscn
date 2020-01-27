@@ -9,7 +9,7 @@
 [ext_resource path="res://enemy/explosion 5.png" type="Texture" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 44.685, 21.7755 )
+extents = Vector2( 22.9336, 31.5814 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {

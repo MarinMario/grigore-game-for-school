@@ -7,6 +7,7 @@ func _ready():
 var spawn_enemy_timer := 0.0
 
 func _physics_process(delta):
+	randomize()
 	spawn_enemy_timer += delta
 	if spawn_enemy_timer > 2:
 		spawn_enemy_timer = 0

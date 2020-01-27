@@ -11,3 +11,9 @@ func _physics_process(delta):
 func _on_bullet_area_entered(area):
 	if area.is_in_group("enemy"):
 		area.die()
+		call_deferred("disable_c")
+
+func disable_c():
+	$CollisionShape2D.disabled = true
+	$Sprite.visible = false
+	
