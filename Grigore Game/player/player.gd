@@ -30,7 +30,7 @@ func _physics_process(delta):
 		shoot_timer = 0
 	
 	if health <= 0:
-		get_tree().reload_current_scene()
+		get_parent().get_node("anims").play("end")
 
 
 func shoot():
