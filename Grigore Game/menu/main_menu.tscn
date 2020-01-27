@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://menu/menu_buttons.tscn" type="PackedScene" id=1]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://world/BebasNeue-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+font_data = SubResource( 1 )
+
+[node name="main_menu" type="Node2D"]
+
+[node name="title" type="Label" parent="."]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 1026.0
+margin_bottom = 226.0
+custom_fonts/font = SubResource( 2 )
+text = "Grigore
+Game"
+align = 1
+valign = 1
+
+[node name="score" type="Label" parent="."]
+margin_left = 567.0
+margin_top = 232.0
+margin_right = 1024.0
+margin_bottom = 600.0
+custom_fonts/font = SubResource( 2 )
+text = "score:
+best:"
+align = 1
+valign = 1
+
+[node name="anims" type="AnimationPlayer" parent="."]
+
+[node name="menu_buttons" parent="." instance=ExtResource( 1 )]
+position = Vector2( 56.4926, 323.371 )
