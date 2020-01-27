@@ -57,8 +57,8 @@ func spawn_score_feedback(semn):
 	var score_feedback = global.SCORE_FEEDBACK.instance()
 	score_feedback.semn = semn
 	score_feedback.global_position = Vector2(
-									rand_range(400, 600),
-									rand_range(100, 300)
+									rand_range(430, 679),
+									rand_range(100, 150)
 									)
 		
 	get_parent().add_child(score_feedback)

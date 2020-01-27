@@ -14,4 +14,5 @@ func _on_exit_pressed():
 
 
 func _on_resume_pressed():
+	$anims.play_backwards("ingame_menu")
 	get_tree().paused = false
